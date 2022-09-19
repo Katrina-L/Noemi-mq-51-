@@ -64,7 +64,7 @@ html {
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  padding: 30px 0;
+  padding: 29px 0;
 }
 
 .logo__link {
@@ -104,7 +104,7 @@ html {
   display: block;
   box-sizing: border-box;
   text-align: center;
-  padding: 70px 230px 125px; 
+  padding: 70px 230px 127px; 
 }
 
 .intro__title {
@@ -277,8 +277,12 @@ html {
   right: 0;
   top: -25px;
   width: 20px;
-  height: 20px;
-  font-size: 20px;
+  height: 20px;/**/
+  font-size: 20px;/**/
+  background-image: url("../svg/form-x.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .popup__close:hover {
@@ -322,14 +326,14 @@ html {
 .trend-block__cards {
   display: flex;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 27px;
   width: 100%; /**/
 }
 
 .trend-block__card {
   position: relative;
   display: flex;
-  max-width: calc(25% - 0.1rem);
+  flex-basis: calc(25% - 0.1rem);
   align-items: flex-end;
   box-sizing: border-box;
   padding-left: 20px;
@@ -378,7 +382,7 @@ html {
   align-items: flex-start;
   box-sizing: border-box;
   width: 100%;
-  padding: 38px 20px 30px 30px;
+  padding: 35px 31px 33px 30px;
   border: 3px solid rgba(181, 159, 91, 0.6);
 }
 
@@ -441,8 +445,8 @@ html {
 
 .post__list_picture {
   position: relative;
-  left: 1px;
-  top: 3px;
+  left: 0px;
+  top: 0px;
   width: 49%; /*378px*/
   background-color: #eff5f1; /*
   border: 1px solid red;*/
@@ -553,7 +557,7 @@ html {
 
 .post_without-margin-top {
   /*добавить в html первому блоку*/
-  margin-top: -5px; /**/
+  margin-top: -7px; /**/
 }
 
 .latest-posts {
@@ -870,12 +874,10 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 28px;
-/*   padding-right: 20px; */
-  padding-bottom: 28px;
-/*   padding-left: 25px; */
+  padding-top: 26px;
+  padding-bottom: 23px;
   width: 100%;
-  height: 61.0478%; /*267px*/
+  flex-grow: 1;
   border: 3px solid rgba(181, 159, 91, 0.6);
 }
 
@@ -967,7 +969,7 @@ html {
   justify-content: center;
   align-items: center;
   width: 46.6667%; /*140px*/
-  min-height: 48px;
+  min-height: 49px;
   background-color: #b59f5b;
   border: none;
   cursor: pointer;
@@ -990,7 +992,7 @@ html {
   display: flex; /**/
   justify-content: center;
   align-items: center;
-  margin-top: 62px;
+  margin-top: 65px;
   margin-bottom: 30px;
   background-color: #f3f7f5;
   width: 100%;
@@ -1128,7 +1130,7 @@ html {
   }
   
   .trend-block {
-    margin-top: 44px;
+    margin-top: 43px;
   }
   
   .trend-block__header {
@@ -1150,7 +1152,7 @@ html {
   }
    
   .content {
-    margin-top: 45px;
+    margin-top: 47px;
   }
   
   .container__main {
@@ -1159,18 +1161,18 @@ html {
 
   .post__list {
     flex-direction: column;
-    margin-top: 41px; /**/
+    margin-top: 38px; /**/
     width: 100%;
   }
   
   .post__list_picture {/* */
-    margin-top: -2px;
-    margin-left: -1px;
+    margin-top: 6px;
+    margin-left: 0;
     width: 100%; /*392px*/
   } 
   
   .card {
-    margin-top: 16px;
+    margin-top: 10px;
     width: 100%; /*392px*/
   }
   
@@ -1240,7 +1242,7 @@ html {
 }
   
   .topics {
-    margin-top: 57px;
+    margin-top: 54px;
   }
   
   .post_without-margin-top {
@@ -1265,13 +1267,14 @@ html {
     width: 48.57%;
     min-height: 433px;  /*  456px;  */
   }
+
+  .card__shop_picture {
+    margin-bottom: -36px;
+  }
   
   .card__shop_border {
-    padding-top: 28px;
-/*     padding-right: 23px; */
-/*     padding-bottom: 30px; */
-/*     padding-left: 23px; */
-    height: 57.4561%; /*262px*/
+    padding-top: 24px;
+    padding-bottom: 4px; /**/
   }
   
   .card__shop_border-text {
@@ -1279,6 +1282,7 @@ html {
   }
   
   .card__shop_header {
+    margin-top: 26px;
     font-size: 1.7rem;
     line-height: 1.29;
   }
@@ -1304,7 +1308,7 @@ html {
   }
   
   .footer__container {
-    margin-top: 53px; /*45px;*/
+    margin-top: 46px; /*45px;*/
   }
 
   .socials {
@@ -1327,10 +1331,10 @@ html {
   }
   
   .trend-block__card {
-    max-width: calc(50% - 4px);
-    min-height: 240px;
+    flex-basis: calc(50% - 4px);
+    min-height: 245px;
     padding-left: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 12px;
     padding-right: 20px;
   }
   
@@ -1454,7 +1458,7 @@ html {
   }
   
   .trend-block__card {
-    max-width: calc(50% - 4px);
+    flex-basis: calc(50% - 4px);
     min-height: 240px;
     padding-left: 20px;
     padding-bottom: 15px;
@@ -1484,12 +1488,12 @@ html {
 
   .post__list {
     flex-direction: column;
-    margin-top: 35px; /**/
+    margin-top: 28px; /**/
     width: 100%;
   }
   
   .post_without-margin-top {
-    margin-top: -1px;
+    margin-top: -8px;
   }
   
   .post__list_picture {
@@ -1535,7 +1539,7 @@ html {
   }
   
   .container__aside {
-    margin-top: 43px;
+    margin-top: 46px;
     width: 100%;
   }
   
@@ -1567,11 +1571,6 @@ html {
     margin-top: 38px;
   }
   
-  .tags__items {
-    display: flex;
-    justify-content: space-between;
-  }
-  
   .tags__item {
     margin: 4px 5px 4px 0;
     padding: 2px 12px 2px 13px;
@@ -1590,13 +1589,25 @@ html {
   }
   
   .card__shop {
-    margin-top: 24px;
+    margin-top: 27px;
     width: 100%;
     min-height: 471px;  /*  456px;  */
   }
+
+  .card__shop_picture {
+    margin-bottom: -33px;
+  }
+
+  .card__shop_header {
+    margin-top: 24px;
+  }
+
+  .card__shop_button {
+    margin-bottom: 23px;
+  }
   
   .footer__container {
-    margin-top: 42px;
+    margin-top: 34px;
   }
 
   .socials {
@@ -1615,7 +1626,7 @@ html {
 @media (max-width: 640px) and (orientation: portrait) {
 
   .trend-block__card {
-    max-width: 100%;
+    flex-basis: 100%;
     margin-top: 0px;
     min-height: 231px;
     padding-left: 15px;
